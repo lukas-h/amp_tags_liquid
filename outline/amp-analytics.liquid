@@ -1,0 +1,15 @@
+{% analytics type: 'googleanalytics' data-block-on-consent: '_till_accepted' %}
+    <script type="application/json">
+        {
+          "vars": {
+              "account": "{{ site.google_analytics }}"
+          },
+          "triggers": {
+              "trackPageview": {
+                  "on": "visible",
+                  "request": "pageview"
+              }
+          }
+        }
+    </script>
+{% endanalytics %}
